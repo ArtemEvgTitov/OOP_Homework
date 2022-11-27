@@ -1,20 +1,10 @@
 package Seminar_01;
 
 public abstract class Human {
-    private String surname;
     private String name;
 
-    public Human(String surname, String name) {
-        this.surname = surname;
+    public Human(String name) {
         this.name = name;
-    }
-
-    public String getSurname() {
-        return surname;
-    }
-
-    public void setSurname(String surname) {
-        this.surname = surname;
     }
 
     public String getName() {
@@ -27,6 +17,6 @@ public abstract class Human {
 
     @Override
     public String toString() {
-        return surname +" "+ name;
+        return name;
     }
 }
