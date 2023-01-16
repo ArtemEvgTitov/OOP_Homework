@@ -5,26 +5,26 @@ import java.util.ArrayList;
 public class Main {
     public static void main(String[] args) {
 
-        Human h1 = new Human("Иван", 1911);
+        Family h1 = new Family("Иван", 1911);
         Node root = new Node(h1);
 
-        Human h2 = new Human("Сергей");
-        Human h3 = new Human(1943);
+        Family h2 = new Family("Сергей", h1);
+        Family h3 = new Family(1943, h1);
         Node n2 = new Node(h2);
         Node n3 = new Node(h3);
 
-        Human h4 = new Human("Екатерина", 1966);
-        Human h5 = new Human("Петров Олег", 1970);
-        Human h6 = new Human("Ниткин Дмитрий", 1969);
+        Family h4 = new Family("Екатерина", 1966);
+        Family h5 = new Family("Петров Олег", 1970);
+        Family h6 = new Family("Ниткин Дмитрий", 1969);
         Node n4 = new Node(h4);
         Node n5 = new Node(h5);
         Node n6 = new Node(h6);
 
-        Human h7 = new Human("Лобов Юрий", 1990);
-        Human h8 = new Human("Зубков Илья", 1991);
-        Human h9 = new Human("Зуев Станислав", 1988);
-        Human h10 = new Human("Редин Георгий", 1990);
-        Human h11 = new Human("Досов Денис", 1992);
+        Family h7 = new Family("Лобов Юрий", 1990, h4);
+        Family h8 = new Family("Зубков Илья", 1991, h4);
+        Family h9 = new Family("Зуев Станислав", 1988, h4);
+        Family h10 = new Family("Редин Георгий", 1990, h6);
+        Family h11 = new Family("Досов Денис", 1992, h6);
         Node n7 = new Node(h7);
         Node n8 = new Node(h8);
         Node n9 = new Node(h9);
@@ -57,6 +57,7 @@ public class Main {
         n6.son = temp_array_n6;
 
         preOrder(root, "-");
+        System.out.println();
     }
 
     static void preOrder(Node tree, String space) {
