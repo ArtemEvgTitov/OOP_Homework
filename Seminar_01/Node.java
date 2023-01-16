@@ -10,11 +10,11 @@ public class Node {
         this.human = human;
     }
 
-    public String printNode(){
+    public String printNode() {
         return human.humanToString();
     }
 
-    public void preOrder(Node tree, String space) {
+    static void preOrder(Node tree, String space) {
         if (tree != null)
             System.out.println(space + tree.human.humanToString());
         else {
@@ -24,6 +24,16 @@ public class Node {
 
         for (int i = 0; i < tree.son.size(); i++) {
             preOrder(tree.son.get(i), space + " * ");
+        }
+    }
+
+    static void children(ArrayList<Node> x) {
+        if (x.size() == 0) {
+            System.out.println("Отсутствуют");
+        } else {
+            for (int i = 0; i < x.size(); i++) {
+                System.out.println(x.get(i).printNode());
+            }
         }
     }
 }
