@@ -26,11 +26,33 @@ public class Family extends Human {
         super(year);
     }
 
+    Family(String name){
+        super(name);
+    }
+
+    Family(Family prew){
+        super();
+        setPrew(prew);
+    }
+
+    Family(){
+        super();
+    }
+
     public void setPrew(Family x){
         this.prew = x;
     }
 
     public Family getPrew(){
         return prew;
+    }
+
+    public String prewToString() {
+        if (prew == null){
+            return "Родственник неизвестен";
+        }
+        else {
+            return prew.humanToString();
+        }
     }
 }

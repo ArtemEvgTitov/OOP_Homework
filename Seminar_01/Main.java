@@ -13,9 +13,9 @@ public class Main {
         Node n2 = new Node(h2);
         Node n3 = new Node(h3);
 
-        Family h4 = new Family("Екатерина", 1966);
-        Family h5 = new Family("Петров Олег", 1970);
-        Family h6 = new Family("Ниткин Дмитрий", 1969);
+        Family h4 = new Family("Екатерина", 1966, h2);
+        Family h5 = new Family("Петров Олег", 1970, h3);
+        Family h6 = new Family("Ниткин Дмитрий", 1969, h3);
         Node n4 = new Node(h4);
         Node n5 = new Node(h5);
         Node n6 = new Node(h6);
@@ -56,21 +56,12 @@ public class Main {
         temp_array_n6.add(n11);
         n6.son = temp_array_n6;
 
-        preOrder(root, "-");
-        System.out.println();
+        System.out.println("------ Всё древо ------");
+        root.preOrder(root, "- ");
+        System.out.println("-----------------------");
+        System.out.println("Отец у: " + h1.humanToString());
+        System.out.println(h1.prewToString());
+        System.out.println("-----------------------");
+        System.out.println(root.printNode());
     }
-
-    static void preOrder(Node tree, String space) {
-        if (tree != null)
-            System.out.println(space + tree.human);
-        else {
-            System.out.println(space + "nil");
-            return;
-        }
-    
-        for (int i = 0; i < tree.son.size(); i++) {
-            preOrder(tree.son.get(i), space + " * ");
-        }
-
-    }    
 }

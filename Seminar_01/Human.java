@@ -40,7 +40,7 @@ public class Human {
         this.year = year;
     }
 
-    public String toString() {
+    public String humanToString() {
         return name + " " + year;
     }
 }
