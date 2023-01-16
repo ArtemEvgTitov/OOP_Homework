@@ -1,25 +1,25 @@
 package Seminar_01;
 
-public abstract class Human {
+public class Human {
     private String name;
     private int year;
 
-    public Human(String name, int year) {
+    Human(String name, int year) {
         this.name = name;
         this.year = year;
     }
 
-    public Human(String name) {
+    Human(String name) {
         this.name = name;
         this.year = -1;
     }
 
-    public Human(int year) {
+    Human(int year) {
         this.name = "Неизвестно";
         this.year = year;
     }
 
-    public Human() {
+    Human() {
         this.name = "Неизвестно";
         this.year = -1;
     }
