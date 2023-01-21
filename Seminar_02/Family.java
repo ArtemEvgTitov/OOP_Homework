@@ -5,6 +5,44 @@ public class Family implements InterfaceHuman {
     private int year;
     private Family prew;
 
+    Family(String name, int year, Family prew){
+        this.name = name;
+        this.year = year;
+        setPrew(prew);
+    }
+
+    Family(int year, Family prew){
+        this.year = year;
+        setPrew(prew);
+    }
+
+    Family(String name, Family prew){
+        this.name = name;
+        setPrew(prew);
+    }
+
+    Family(String name, int year){
+        this.name = name;
+        this.year = year;
+    }
+
+    Family(int year){
+        this.year = year;
+    }
+
+    Family(String name){
+        this.name = name;
+    }
+
+    Family(Family prew){
+        super();
+        setPrew(prew);
+    }
+
+    Family(){
+        super();
+    }
+
     @Override
     public String getName() {
         return name;
