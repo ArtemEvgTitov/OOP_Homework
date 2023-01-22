@@ -56,15 +56,15 @@ public class Main {
         temp_array_n6.add(n11);
         n6.son = temp_array_n6;
 
-        // System.out.println("\n------ Всё древо ------");
-        // Node.preOrder(root, "- ");
-        // System.out.println("\n------ Все родственики после ------");
-        // Node.preOrder(n4, "- ");
+        System.out.println("\n------ Всё древо ------");
+        root.preOrder(root, "- ");
+        System.out.println("\n------ Все родственики после ------");
+        n4.preOrder(n4, "- ");
         System.out.println("\n-----------------------");
         System.out.println("Отец/мать у: " + h1.humanToString());
         System.out.println(h1.prewToString());
-        // System.out.println("\n-----------------------");
-        // System.out.println("Дети у: " + h3.humanToString());
-        // Node.children(n3.son);
+        System.out.println("\n-----------------------");
+        System.out.println("Дети у: " + h3.humanToString());
+        n3.children(n3.son);
     }
 }
