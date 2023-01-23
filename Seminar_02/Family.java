@@ -5,6 +5,12 @@ public class Family implements InterfaceHuman {
     private int year;
     private Family prew;
 
+    Family(Family x, Family prew){
+        setName(x);
+        setBirthday(x);
+        setPrew(prew);
+    }
+
     Family(String name, int year, Family prew){
         this.name = name;
         this.year = year;
@@ -67,6 +73,15 @@ public class Family implements InterfaceHuman {
     public String humanToString() {
         return name + " " + year;
     }
+
+    @Override
+    public void setName(Family x){
+        this.name = x.name;
+    }
+
+    public void setBirthday(Family x){
+        this.year = x.year;
+    } 
 
     @Override
     public void setPrew(Family x) {

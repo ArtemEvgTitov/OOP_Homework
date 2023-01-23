@@ -9,7 +9,9 @@ public interface InterfaceHuman {
     void setName(String name);
     int getBirthday();
     void setBirthday(int year);
-    String humanToString();    
+    String humanToString(); 
+    void setName(Family x);
+    void setBirthday(Family x);   
     void setPrew(Family x);
     Family getPrew();
     String prewToString();
