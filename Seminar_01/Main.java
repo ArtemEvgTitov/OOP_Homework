@@ -1,11 +1,23 @@
 package Seminar_01;
 
 import java.util.ArrayList;
+import java.util.Scanner;
+import java.util.function.Supplier;
 
 public class Main {
     public static void main(String[] args) {
 
-        Family h1 = new Family("Иван", 1911);
+        Supplier<Human> humanFactory = ()->{
+
+            Scanner in = new Scanner(System.in);
+            System.out.print("Введите имя: ");
+            String name = in.nextLine();
+            System.out.print("Введите год: ");
+            int year = in.nextInt();
+            return new Human(name, year);
+        };
+
+        Family h1 = new Family(humanFactory.get());
         Node root = new Node(h1);
 
         Family h2 = new Family("Сергей", h1);
@@ -58,13 +70,13 @@ public class Main {
 
         System.out.println("\n------ Всё древо ------");
         Node.preOrder(root, "- ");
-        System.out.println("\n------ Все родственики после ------");
-        Node.preOrder(n4, "- ");
-        System.out.println("\n-----------------------");
-        System.out.println("Отец/мать у: " + h1.humanToString());
-        System.out.println(h1.prewToString());
-        System.out.println("\n-----------------------");
-        System.out.println("Дети у: " + h3.humanToString());
-        Node.children(n3.son);
+        // System.out.println("\n------ Все родственики после ------");
+        // Node.preOrder(n4, "- ");
+        // System.out.println("\n-----------------------");
+        // System.out.println("Отец/мать у: " + h1.humanToString());
+        // System.out.println(h1.prewToString());
+        // System.out.println("\n-----------------------");
+        // System.out.println("Дети у: " + h3.humanToString());
+        // Node.children(n3.son);
     }
 }

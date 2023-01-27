@@ -3,6 +3,10 @@ package Seminar_01;
 public class Family extends Human {
     private Family prew;
 
+    Family(Human x){
+        super(x.getName(), x.getBirthday());
+    }
+
     Family(String name, int year, Family prew){
         super(name, year);
         setPrew(prew);
