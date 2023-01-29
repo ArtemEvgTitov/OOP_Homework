@@ -38,4 +38,9 @@ public class Human<T, R> implements HumanInterface<T, R> {
     public String humanToString() {
         return name + " " + year;
     }
+
+    @Override
+    public String printNameOrYear(){
+        return name + "";
+    }
 }

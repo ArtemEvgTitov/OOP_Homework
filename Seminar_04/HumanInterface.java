@@ -13,4 +13,6 @@ public interface HumanInterface<T, R> {
     void setBirthday(R year);
 
     String humanToString();
+
+    String printNameOrYear();
 }

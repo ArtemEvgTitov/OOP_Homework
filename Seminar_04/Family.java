@@ -14,6 +14,11 @@ public class Family<T, R> extends Human<T, R> {
         setBirthday(year);
     }
 
+    Family(T x, Family<T,R> prew){
+        setName(x);
+        setPrew(prew);
+    }
+
     Family(Family<T, R> prew) {
         super();
         setPrew(prew);

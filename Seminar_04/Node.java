@@ -3,10 +3,10 @@ package Seminar_04;
 import java.util.ArrayList;
 
 public class Node {
-    Family human;
+    Family<String, Integer> human;
     ArrayList<Node> son = new ArrayList<Node>();
 
-    public Node(Family human) {
+    public Node(Family<String, Integer> human) {
         this.human = human;
     }
 
@@ -16,7 +16,12 @@ public class Node {
 
     public void preOrder(Node tree, String space) {
         if (tree != null)
-            System.out.println(space + tree.human.humanToString());
+            if(tree.human.getBirthday() == null){
+                System.out.println(space + tree.human.printNameOrYear());
+            } else {
+                System.out.println(space + tree.human.humanToString());
+            }
+            
         else {
             System.out.println(space + "nil");
             return;
