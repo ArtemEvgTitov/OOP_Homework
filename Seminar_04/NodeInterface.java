@@ -1,5 +1,9 @@
 package Seminar_04;
 
-public interface NodeInterface<T> {
-    
+import java.util.ArrayList;
+
+public interface NodeInterface<T,R> {
+    String printNode();
+    void preOrder(T tree, R space);
+    void children(ArrayList<T> x);
 }
