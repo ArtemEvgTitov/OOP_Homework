@@ -4,7 +4,7 @@ public class Human<T, R> implements HumanInterface<T, R> {
     private T name;
     private R year;
 
-    Human(T name, R year){
+    Human(T name, R year) {
         this.name = name;
         this.year = year;
     }
