@@ -1,8 +1,18 @@
 package Seminar_04;
 
-public class Human<T> implements HumanInterface<T> {
+public class Human<T, R> implements HumanInterface<T, R> {
     private T name;
-    private T year;
+    private R year;
+
+    Human(T name, R year){
+        this.name = name;
+        this.year = year;
+    }
+
+    Human() {
+        this.name = null;
+        this.year = null;
+    }
 
     @Override
     public T getName() {
@@ -15,17 +25,17 @@ public class Human<T> implements HumanInterface<T> {
     }
 
     @Override
-    public T getBirthday() {
+    public R getBirthday() {
         return year;
     }
 
     @Override
-    public void setBirthday(T year){
+    public void setBirthday(R year) {
         this.year = year;
     }
 
     @Override
-    public String humanToString(){
+    public String humanToString() {
         return name + " " + year;
     }
 }
