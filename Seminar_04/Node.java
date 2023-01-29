@@ -16,12 +16,12 @@ public class Node {
 
     public void preOrder(Node tree, String space) {
         if (tree != null)
-            if(tree.human.getBirthday() == null){
+            if (tree.human.getBirthday() == null) {
                 System.out.println(space + tree.human.printNameOrYear());
             } else {
                 System.out.println(space + tree.human.humanToString());
             }
-            
+
         else {
             System.out.println(space + "nil");
             return;

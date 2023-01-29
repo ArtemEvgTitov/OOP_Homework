@@ -40,7 +40,7 @@ public class Human<T, R> implements HumanInterface<T, R> {
     }
 
     @Override
-    public String printNameOrYear(){
+    public String printNameOrYear() {
         return name + "";
     }
 }
