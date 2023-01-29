@@ -8,13 +8,13 @@ public class Main {
         Family<String, Integer> h1 = new Family<>("Олег", 1911);
         Node root = new Node(h1);
 
-        Family<String, Integer> h2 = new Family<>("Сергей", h1);
-        Family<String, Integer> h3 = new Family<>("Неизвестно", 1943, h1);
+        Family<String, Integer> h2 = new Family<>("Сергей", null, h1);
+        Family<String, Integer> h3 = new Family<>(null, 1943, h1);
         Node n2 = new Node(h2);
         Node n3 = new Node(h3);
 
         Family<String, Integer> h4 = new Family<>("Екатерина", 1966, h2);
-        Family<String, Integer> h5 = new Family<>("Петров Олег", 1970, h3);
+        Family<String, Integer> h5 = new Family<>(null, 1970, h3);
         Family<String, Integer> h6 = new Family<>("Ниткин Дмитрий", 1969, h3);
         Node n4 = new Node(h4);
         Node n5 = new Node(h5);
@@ -22,9 +22,9 @@ public class Main {
 
         Family<String, Integer> h7 = new Family<>("Лобов Юрий", 1990, h4);
         Family<String, Integer> h8 = new Family<>("Зубков Илья", 1991, h4);
-        Family<String, Integer> h9 = new Family<>("Зуев Станислав", 1988, h4);
+        Family<String, Integer> h9 = new Family<>("Зуев Станислав", null, h4);
         Family<String, Integer> h10 = new Family<>("Редин Георгий", 1990, h6);
-        Family<String, Integer> h11 = new Family<>("Досов Денис", 1992, h6);
+        Family<String, Integer> h11 = new Family<>(null, 1992, h6);
         Node n7 = new Node(h7);
         Node n8 = new Node(h8);
         Node n9 = new Node(h9);
@@ -62,7 +62,7 @@ public class Main {
         n4.preOrder(n4, "- ");
         System.out.println("\n-----------------------");
         System.out.println("Отец/мать у: " + h1.humanToString());
-        System.out.println(h1.humanToString());
+        System.out.println(h1.prewToString());
         System.out.println("\n-----------------------");
         System.out.println("Дети у: " + h3.humanToString());
         n3.children(n3.son);

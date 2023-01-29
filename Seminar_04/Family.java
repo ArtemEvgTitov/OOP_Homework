@@ -16,6 +16,7 @@ public class Family<T, R> extends Human<T, R> {
 
     Family(T x, Family<T, R> prew) {
         setName(x);
+        setBirthday(null);
         setPrew(prew);
     }
 
@@ -26,6 +27,7 @@ public class Family<T, R> extends Human<T, R> {
 
     Family() {
         super();
+        setPrew(null);
     }
 
     public void setPrew(Family<T, R> x) {
@@ -34,5 +36,13 @@ public class Family<T, R> extends Human<T, R> {
 
     public Family<T, R> getPrew() {
         return prew;
+    }
+
+    public String prewToString() {
+        if (prew == null) {
+            return "Родственник неизвестен";
+        } else {
+            return prew.humanToString();
+        }
     }
 }

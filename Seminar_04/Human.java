@@ -36,11 +36,14 @@ public class Human<T, R> implements HumanInterface<T, R> {
 
     @Override
     public String humanToString() {
-        return name + " " + year;
-    }
-
-    @Override
-    public String printNameOrYear() {
-        return name + "";
+        if (name == null){
+            return "Имя неизвестно" + " " + year;
+        }
+        if (year == null){
+            return name + " " + "Год неизвестен";
+        }
+        else{
+            return name + " " + year;
+        }
     }
 }
