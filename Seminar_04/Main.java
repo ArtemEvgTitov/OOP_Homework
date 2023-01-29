@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Main {
     public static void main(String[] args) {
 
-        Family<String, Integer> h1 = new Family<>("Олег", 1911);
+        Family<String, Integer> h1 = new Family<>("Олег", 1911, null);
         Node root = new Node(h1);
 
         Family<String, Integer> h2 = new Family<>("Сергей", null, h1);
