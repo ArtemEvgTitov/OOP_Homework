@@ -2,7 +2,7 @@ package Seminar_05;
 
 public interface Model<T> {
 
-    T sum();
+    T sum(T a, T b);
 
     T sub();
 

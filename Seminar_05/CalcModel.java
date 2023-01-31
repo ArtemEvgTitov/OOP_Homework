@@ -5,7 +5,7 @@ public class CalcModel<T> implements Model<T> {
     T x, y, result;
 
     @Override
-    public T sum() {
+    public T sum(T x, T y) {
         return result;
     }
 
