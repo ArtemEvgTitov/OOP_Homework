@@ -41,4 +41,15 @@ public class Complex {
         this.image = image;
     }
 
+    public void printComplex () {
+		if(image > 0){
+			System.out.println(real + " + " + image + "i");
+		}else if(image < 0){
+			System.out.println(real + "" + image + "i");
+		}else{
+			System.out.println(real);
+		}
+	}
+
+
 }
