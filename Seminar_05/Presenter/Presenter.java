@@ -5,12 +5,12 @@ import Seminar_05.Model.*;
 
 public class Presenter {
     View view;
-//    CalcModel model;
+    // CalcModel model;
     double x;
     double y;
 
     public Presenter(CalcModel m, View v) {
-//        this.model = m;
+        // this.model = m;
         this.view = v;
     }
 
@@ -20,13 +20,16 @@ public class Presenter {
     }
 
     public void runOperation() {
+        int choiceOne = view.getChoiceOne();
         int choice = view.getChoice();
         this.buttonClick();
-        switch (choice) {
-            case 1 -> System.out.println(new SumCalc().result(x, y));
-            case 2 -> System.out.println(new SubCalc().result(x, y));
-            case 3 -> System.out.println(new MultCalc().result(x, y));
-            case 4 -> System.out.println(new DivCalc().result(x, y));
+        switch (choiceOne) {
+            case 1: switch (choice) {
+                case 1 -> System.out.println(new SumCalc().result(x, y));
+                case 2 -> System.out.println(new SubCalc().result(x, y));
+                case 3 -> System.out.println(new MultCalc().result(x, y));
+                case 4 -> System.out.println(new DivCalc().result(x, y));
+            }
         }
     }
 }

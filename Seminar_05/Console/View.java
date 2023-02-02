@@ -15,11 +15,19 @@ public class View {
     }
 
     public int getChoice() {
-        System.out.println("Choice operation:");
-        System.out.println("\t1. Summarize");
-        System.out.println("\t2. Subtraction");
-        System.out.println("\t3. Multiplication");
-        System.out.println("\t4. Division");
+        System.out.println("Выберите операцию:");
+        System.out.println("\t1. Сумма");
+        System.out.println("\t2. Разность");
+        System.out.println("\t3. Умножение");
+        System.out.println("\t4. Деление");
         return in.nextInt();
     }
+
+    public int getChoiceOne() {
+        System.out.println("С какими числами хотите работать:");
+        System.out.println("\t1. Рациональные");
+        System.out.println("\t2. Комплексные");
+        return in.nextInt();
+    }
+
 }
