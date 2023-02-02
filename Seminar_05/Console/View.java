@@ -10,23 +10,19 @@ public class View {
         return in.nextDouble();
     }
 
-    public void showValue(String msg, double value) {
-        System.out.println(msg + value);
-    }
-
     public int getChoice() {
-        System.out.println("Выберите операцию:");
-        System.out.println("\t1. Сумма");
-        System.out.println("\t2. Разность");
-        System.out.println("\t3. Умножение");
-        System.out.println("\t4. Деление");
+        System.out.println("\nВыберите операцию:");
+        System.out.println("1. Сумма");
+        System.out.println("2. Разность");
+        System.out.println("3. Умножение");
+        System.out.println("4. Деление\n");
         return in.nextInt();
     }
 
     public int getChoiceOne() {
-        System.out.println("С какими числами хотите работать:");
-        System.out.println("\t1. Рациональные");
-        System.out.println("\t2. Комплексные");
+        System.out.println("\nС какими числами хотите работать:");
+        System.out.println("1. Рациональные");
+        System.out.println("2. Комплексные");
         return in.nextInt();
     }
 }
