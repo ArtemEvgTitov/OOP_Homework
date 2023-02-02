@@ -17,4 +17,14 @@ public class Complex {
     public double getY() {
         return y;
     }
+
+    public void print () {
+		if(y > 0){
+			System.out.println(x + " + " + y + "i");
+		}else if(y < 0){
+			System.out.println(x + "" + y + "i");
+		}else{
+			System.out.println(x);
+		}
+	}
 }

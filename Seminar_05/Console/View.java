@@ -29,5 +29,4 @@ public class View {
         System.out.println("\t2. Комплексные");
         return in.nextInt();
     }
-
 }

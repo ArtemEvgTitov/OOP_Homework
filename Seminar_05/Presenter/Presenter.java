@@ -10,8 +10,8 @@ import Seminar_05.Model.RationalModel.SumCalc;
 public class Presenter {
     View view;
     // CalcModel model;
-    double x;
-    double y;
+    double x, x1, x2;
+    double y, y1, y2;
 
     public Presenter(CalcModel m, View v) {
         // this.model = m;
@@ -21,6 +21,14 @@ public class Presenter {
     public void buttonClick() {
         x = (view.getValue("X"));
         y = (view.getValue("Y"));
+    }
+
+    public void buttonClickComplex(){
+        x1 = (view.getValue("X1"));
+        x2 = (view.getValue("X2"));
+        y1 = (view.getValue("Y1"));
+        y2 = (view.getValue("Y2"));
+
     }
 
     public void runOperation() {
