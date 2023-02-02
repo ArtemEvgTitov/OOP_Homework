@@ -6,7 +6,7 @@ public class View {
     Scanner in = new Scanner(System.in);
 
     public double getValue(String msg) {
-        System.out.print("Enter value " + msg + " > ");
+        System.out.print("Введите " + msg + " > ");
         return in.nextDouble();
     }
 
