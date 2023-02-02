@@ -7,4 +7,6 @@ public class DivComplex extends CalcModel {
     public double result(double x, double y) {
         return x / y;
     }
+
+    // public Complex
 }
