@@ -1,23 +1,11 @@
 package Seminar_01;
 
 import java.util.ArrayList;
-import java.util.Scanner;
-import java.util.function.Supplier;
 
 public class Main {
     public static void main(String[] args) {
 
-        Supplier<Human> humanFactory = ()->{
-
-            Scanner in = new Scanner(System.in);
-            System.out.print("Введите имя: ");
-            String name = in.nextLine();
-            System.out.print("Введите год: ");
-            int year = in.nextInt();
-            return new Human(name, year);
-        };
-
-        Family h1 = new Family(humanFactory.get());
+        Family h1 = new Family("Олег", 1911);
         Node root = new Node(h1);
 
         Family h2 = new Family("Сергей", h1);
