@@ -1,13 +1,15 @@
 package Seminar_06.Console;
 
 import java.util.Scanner;
+
 /**
  * Класс для выбора типа числа
  */
-public class ViewChoiceTypeNumber implements IVeiw {
+public class ViewChoiceTypeNumber implements IVeiw, IGetValue {
 
     Scanner in = new Scanner(System.in);
 
+    @Override
     public double getValue(String msg) {
         System.out.print("Введите " + msg + " > ");
         return in.nextDouble();
@@ -20,5 +22,5 @@ public class ViewChoiceTypeNumber implements IVeiw {
         System.out.println("2. Комплексные");
         return in.nextInt();
     }
-    
+
 }

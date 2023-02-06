@@ -1,6 +1,7 @@
 package Seminar_06.Model.RationalModel;
 
 import Seminar_06.Model.CalcModel;
+
 /**
  * Класс для рассчёта произведения рациональных чисел
  */

@@ -1,6 +1,7 @@
 package Seminar_06.Model.ComplexModel;
 
 import Seminar_06.Model.CalcModel;
+
 /**
  * Класс для рассчёта деления комплексных чисел
  */

@@ -1,6 +1,8 @@
 package Seminar_06.Model.ComplexModel;
+
 /**
- * Класс Coplex. Содержит конструктор Complex(double x, double y), методы получения X и Y, а также метод печати Комплексного числа
+ * Класс Coplex. Содержит конструктор Complex(double x, double y), методы
+ * получения X и Y, а также метод печати Комплексного числа
  */
 public class Complex {
 
