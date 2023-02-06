@@ -1,8 +1,9 @@
 package Seminar_06.Console;
 
 import java.util.Scanner;
-
-// Класс для выбора типа числа
+/**
+ * Класс для выбора типа числа
+ */
 public class ViewChoiceTypeNumber implements IVeiw {
 
     Scanner in = new Scanner(System.in);
