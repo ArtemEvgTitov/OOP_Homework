@@ -11,6 +11,9 @@ public class SubComplex extends CalcModel {
         return x - y;
     }
 
+    /**
+     * Метод рассчёта результата
+     */
     public Complex resultComplex(double x1, double x2, double y1, double y2) {
         double newReal = result(x1, x2);
         double newImage = result(y1, y2);

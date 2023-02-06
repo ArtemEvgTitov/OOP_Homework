@@ -7,10 +7,12 @@ import Seminar_06.Model.ComplexModel.SubComplex;
 import Seminar_06.Model.ComplexModel.SumComplex;
 import Seminar_06.Presenter.ButtonClick.ButtonClickComplex;
 
+/**
+ * Класс запуска для комплексных чисел
+ */
+public class RunComplex extends ButtonClickComplex implements IRunner {
 
-public class RunComplex extends ButtonClickComplex implements IRunner{
-
-    View view;
+    ViewModel view;
     double x1, x2;
     double y1, y2;
 
@@ -24,7 +26,7 @@ public class RunComplex extends ButtonClickComplex implements IRunner{
             case 3 -> (new MultComplex().resultComplex(x1, x2, y1, y2)).print();
             case 4 -> (new DivComplex().resultComplex(x1, x2, y1, y2)).print();
         }
-        
+
     }
-    
+
 }

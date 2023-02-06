@@ -8,9 +8,12 @@ import Seminar_06.Model.RationalModel.MultCalc;
 import Seminar_06.Model.RationalModel.SubCalc;
 import Seminar_06.Model.RationalModel.SumCalc;
 
+/**
+ * Класс запуска для комплексных чисел
+ */
 public class RunRatio extends ButtonClickRatio implements IRunner {
 
-    View view;
+    ViewModel view;
     double x;
     double y;
 

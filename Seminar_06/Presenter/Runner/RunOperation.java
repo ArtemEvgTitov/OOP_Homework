@@ -2,9 +2,12 @@ package Seminar_06.Presenter.Runner;
 
 import Seminar_06.Console.*;
 
+/**
+ * Класс запуска программы
+ */
 public class RunOperation implements IRunner {
 
-    View view;
+    ViewModel view;
 
     @Override
     public void run() {
@@ -21,7 +24,7 @@ public class RunOperation implements IRunner {
             default:
                 run();
         }
-        
+
     }
-    
+
 }

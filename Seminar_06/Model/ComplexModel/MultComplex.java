@@ -11,6 +11,9 @@ public class MultComplex extends CalcModel {
         return x * y;
     }
 
+    /**
+     * Метод рассчёта результата
+     */
     public Complex resultComplex(double x1, double x2, double y1, double y2) {
         double newReal = result(x1, x2) - result(y1, y2);
         double newImage = result(y1, x2) + result(x1, y2);

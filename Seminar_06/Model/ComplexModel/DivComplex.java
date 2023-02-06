@@ -12,6 +12,9 @@ public class DivComplex extends CalcModel {
         return x / y;
     }
 
+    /**
+     * Метод рассчёта результата
+     */
     public Complex resultComplex(double x1, double x2, double y1, double y2) {
         double newReal = result((x1 * x2 + y1 * y2), (x2 * x2 + y2 * y2));
         double newImage = result((y1 * x2 - x1 * y2), (x2 * x2 + y2 * y2));
