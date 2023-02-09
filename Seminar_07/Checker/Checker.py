@@ -1,7 +1,8 @@
-import Seminar_07.Logger.Logger as log
+import Seminar_07.Logger.Logger
 
-class Checker():
-    def check_float_number(inputText):
+class Checker(Seminar_07.Logger.Logger.Logger):
+    def check_float_number(self, inputText):
+        log = Seminar_07.Logger.Logger.Logger()
         is_OK = False
         while not is_OK:
             try:
@@ -12,7 +13,8 @@ class Checker():
                 log.log_error('Некорректный ввод float')
         return number
 
-    def check_complex_number(inputText):
+    def check_complex_number(self, inputText):
+        log = Seminar_07.Logger.Logger.Logger()
         is_OK = False
         while not is_OK:
             try:
@@ -23,7 +25,8 @@ class Checker():
                 log.log_error('Некорректный ввод complex')
         return number
 
-    def check_regime(inputText):
+    def check_regime(self, inputText):
+        log = Seminar_07.Logger.Logger.Logger()
         is_OK = False
         while not is_OK:
             try:
@@ -38,7 +41,8 @@ class Checker():
                 log.log_error('Некорректный ввод режима работы (введена не цифра)')
         return number
 
-    def check_operation(inputText):
+    def check_operation(self, inputText):
+        log = Seminar_07.Logger.Logger.Logger()
         operation_list = ['+', '-', '*', '/']
         is_OK = False
         while not is_OK:
