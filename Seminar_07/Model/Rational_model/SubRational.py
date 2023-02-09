@@ -1,6 +1,7 @@
 import Seminar_07.Logger.Logger
 
 class SubRational(Seminar_07.Logger.Logger.Logger):
+    '''Вычитание'''
 
     def result(self, a, b):
         result = a - b

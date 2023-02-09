@@ -1,6 +1,7 @@
 import Seminar_07.Logger.Logger
 
 class SumRational(Seminar_07.Logger.Logger.Logger):
+    '''Сложение'''
 
 
     def result(self, a, b):

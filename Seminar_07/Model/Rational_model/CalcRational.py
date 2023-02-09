@@ -3,9 +3,12 @@ import Seminar_07.Model.Rational_model.SubRational as Sub
 import Seminar_07.Model.Rational_model.MultRational as Mult
 import Seminar_07.Model.Rational_model.DivRational as Div
 
+
 class CalcRational():
+    '''Модель всего калькулятора'''
 
     def start_calc(self, operation, a, b):
+        '''Выбор модели исходя из операции, которую ввёл пользователь'''
         if operation == '*':
             res = Mult.MultRational()
             result = res.result(a, b)
