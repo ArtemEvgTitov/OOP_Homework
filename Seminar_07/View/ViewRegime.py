@@ -1,5 +1,6 @@
 import Seminar_07.Checker.CheckRegime as CheckRegime
 
+
 class ViewRegime():
 
     def regime(self):

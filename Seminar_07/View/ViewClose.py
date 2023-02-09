@@ -1,5 +1,6 @@
 import Seminar_07.Logger.Logger
 
+
 class ViewClose():
     '''Вывод информации о закрытии программы'''
 

@@ -1,5 +1,6 @@
 import Seminar_07.Logger.Logger
 
+
 class CheckRegime():
     '''Проверка выбора режима работы'''
 

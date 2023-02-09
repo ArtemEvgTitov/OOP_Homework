@@ -2,6 +2,7 @@ import Seminar_07.View.View as View
 import Seminar_07.Model.Rational_model.CalcRational as CalculatorRatio
 import Seminar_07.Model.Complex_model.CalcComplex as CalculatorComplex
 
+
 class Presenter():
     '''Содержит кнопку запуска программы'''
 
@@ -26,7 +27,3 @@ class Presenter():
             print('Выход из программы')
             view_close.close(self)
             exit()
-
-
-
-

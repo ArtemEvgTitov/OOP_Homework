@@ -1,5 +1,6 @@
 import Seminar_07.Logger.Logger
 
+
 class CheckFloat():
     '''Проверка на Float'''
 
