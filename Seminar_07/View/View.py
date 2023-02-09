@@ -1,33 +1,10 @@
-import Seminar_07.Checker.CheckFloat as CheckFloat
-import Seminar_07.Checker.CheckRegime as CheckRegime
-import  Seminar_07.Checker.CheckOperation as CheckOperation
-import Seminar_07.Logger.Logger
+import Seminar_07.View.ViewClose as Close
+import Seminar_07.View.ViewOperation as Operation
+import Seminar_07.View.ViewConstants as Constants
 
 class View():
-    def const(self):
-        '''Выбор режима работы и приём чисел от пользователя'''
-        check_number = CheckFloat.CheckFloat()
-        check_vers = CheckRegime.CheckRegime()
-        log = Seminar_07.Logger.Logger.Logger()
-        ver = check_vers.check_regime(
-            '\nВведите режим работы программы:\n0 - Закрыть программу;\n1 - Рациональные числа;\nВвод ')
-        if ver == 1:
-            a = check_number.check_float_number('\nВведите первое число ')
-            b = check_number.check_float_number('Введите второе число ')
-        elif ver == 0:
-            a, b = 0, 0
-        log.log_text(f'\nВыбран "{ver}" режим работы. \nВ качестве первого числа введено {a}, \nв качестве второго {b}')
-        return a, b, ver
 
-    def oper(self):
-        '''Выбор операции'''
-        check_operation = CheckOperation.CheckOperation()
-        log = Seminar_07.Logger.Logger.Logger()
-        operation = check_operation.check_operation('\nВыберите операцию на числами из списка: "*", "/", "+", "-"\nВвод  ')
-        log.log_text(f'Выбрана операция "{operation}"')
-        return operation
-
-    def close(self):
-        '''Вывод информации о закрытии программы'''
-        log = Seminar_07.Logger.Logger.Logger()
-        log.log_text("Программа закрыта")
+    def __init__(self):
+        self.close = Close.ViewClose
+        self.operation = Operation.ViewOperation
+        self.constants = Constants.ViewConstants
