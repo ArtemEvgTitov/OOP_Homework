@@ -1,7 +1,7 @@
-import SumRational
+import CalcModel
 
 
-class SubRational(SumRational):
+class SubRational(CalcModel):
 
     def result(self, a, b):
         return a / b
