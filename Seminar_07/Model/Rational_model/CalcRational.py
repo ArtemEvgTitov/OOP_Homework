@@ -5,7 +5,7 @@ import Seminar_07.Model.Rational_model.DivRational as Div
 
 
 class CalcRational():
-    '''Модель всего калькулятора'''
+    '''Модель всего калькулятора для рациональных чисел'''
 
     def start_calc(self, operation, a, b):
         '''Выбор модели исходя из операции, которую ввёл пользователь'''
