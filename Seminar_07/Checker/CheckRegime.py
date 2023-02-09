@@ -10,10 +10,13 @@ class CheckRegime():
         while not is_OK:
             try:
                 number = int(input(f"{inputText}"))
-                if number in [0, 1]:
+                if number in [0, 1, 2]:
                     is_OK = True
                 else:
-                    print("Некорректный ввод. 0 - закрыть программу; 1 - float")
+                    print("\nНекорректный ввод. "
+                          "\n0 - Закрыть программу; "
+                          "\n1 - Рациональные числа; "
+                          "\n2 - Комплексные числа")
                     log.log_text(
                         'Некорректный ввод режима работы (некорректная цифра)')
             except ValueError:

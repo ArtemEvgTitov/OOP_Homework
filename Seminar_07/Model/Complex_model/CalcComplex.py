@@ -21,4 +21,4 @@ class CalcComplex():
         elif operation == '-':
             res = Sub.SubComplex()
             result = res.result(x1, x2, y1, y2)
-        print(result)
+        result.print_complex_number()
