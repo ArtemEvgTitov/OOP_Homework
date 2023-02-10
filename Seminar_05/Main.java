@@ -7,7 +7,7 @@ import java.util.logging.*;
 import java.io.IOException;
 
 public class Main {
-    public static void main(String[] args) throws IOException  {
+    public static void main(String[] args) throws IOException {
 
         Logger logger = Logger.getLogger(Main.class.getName());
         FileHandler fh = new FileHandler("log.txt");
