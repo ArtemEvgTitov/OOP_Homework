@@ -3,59 +3,58 @@ package Seminar_01;
 public class Family extends Human {
     private Family prew;
 
-    Family(Human x){
+    Family(Human x) {
         super(x.getName(), x.getBirthday());
     }
 
-    Family(String name, int year, Family prew){
+    Family(String name, int year, Family prew) {
         super(name, year);
         setPrew(prew);
     }
 
-    Family(int year, Family prew){
+    Family(int year, Family prew) {
         super(year);
         setPrew(prew);
     }
 
-    Family(String name, Family prew){
+    Family(String name, Family prew) {
         super(name);
         setPrew(prew);
     }
 
-    Family(String name, int year){
+    Family(String name, int year) {
         super(name, year);
     }
 
-    Family(int year){
+    Family(int year) {
         super(year);
     }
 
-    Family(String name){
+    Family(String name) {
         super(name);
     }
 
-    Family(Family prew){
+    Family(Family prew) {
         super();
         setPrew(prew);
     }
 
-    Family(){
+    Family() {
         super();
     }
 
-    public void setPrew(Family x){
+    public void setPrew(Family x) {
         this.prew = x;
     }
 
-    public Family getPrew(){
+    public Family getPrew() {
         return prew;
     }
 
     public String prewToString() {
-        if (prew == null){
+        if (prew == null) {
             return "Родственник неизвестен";
-        }
-        else {
+        } else {
             return prew.humanToString();
         }
     }
