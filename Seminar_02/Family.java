@@ -5,47 +5,47 @@ public class Family implements InterfaceHuman {
     private int year;
     private Family prew;
 
-    Family(Family x, Family prew){
+    Family(Family x, Family prew) {
         setName(x);
         setBirthday(x);
         setPrew(prew);
     }
 
-    Family(String name, int year, Family prew){
+    Family(String name, int year, Family prew) {
         this.name = name;
         this.year = year;
         setPrew(prew);
     }
 
-    Family(int year, Family prew){
+    Family(int year, Family prew) {
         this.year = year;
         setPrew(prew);
     }
 
-    Family(String name, Family prew){
+    Family(String name, Family prew) {
         this.name = name;
         setPrew(prew);
     }
 
-    Family(String name, int year){
+    Family(String name, int year) {
         this.name = name;
         this.year = year;
     }
 
-    Family(int year){
+    Family(int year) {
         this.year = year;
     }
 
-    Family(String name){
+    Family(String name) {
         this.name = name;
     }
 
-    Family(Family prew){
+    Family(Family prew) {
         super();
         setPrew(prew);
     }
 
-    Family(){
+    Family() {
         super();
     }
 
@@ -75,13 +75,13 @@ public class Family implements InterfaceHuman {
     }
 
     @Override
-    public void setName(Family x){
+    public void setName(Family x) {
         this.name = x.name;
     }
 
-    public void setBirthday(Family x){
+    public void setBirthday(Family x) {
         this.year = x.year;
-    } 
+    }
 
     @Override
     public void setPrew(Family x) {

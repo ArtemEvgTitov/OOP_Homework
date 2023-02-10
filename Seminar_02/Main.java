@@ -9,7 +9,7 @@ public class Main {
     public static void main(String[] args) {
 
         Consumer<Family> print = x -> System.out.println(x.getName());
-        Supplier<Family> humanFactory = ()->{
+        Supplier<Family> humanFactory = () -> {
 
             Scanner in = new Scanner(System.in);
             System.out.print("Введите имя: ");
@@ -18,7 +18,6 @@ public class Main {
             int year = in.nextInt();
             return new Family(name, year);
         };
-
 
         System.out.println("Введите первого родственника");
         Family h1 = humanFactory.get();
